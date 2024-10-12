@@ -1,0 +1,19 @@
+
+.ListGroup {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; 
+  }
+  
+  .CardItem {
+    width: calc(33.33% - 20px);
+  }
+
+  .CardItem img {
+    max-width: 50%; /* Agregar esta propiedad para que las imágenes no se expandan más allá de cierto tamaño */
+    height: auto; /* Agregar esta propiedad para que las imágenes se ajusten automáticamente */
+  }
+  
+
+
