@@ -1,0 +1,39 @@
+.CartItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+  }
+  
+  .CartItem-Details {
+    display: flex;
+    align-items: center;
+  }
+  
+  .CartItem-Details > *:not(:last-child) {
+    margin-right: 100px;
+  }
+  
+  .CartItem-Cantidad,
+  .CartItem-Subtotal {
+    text-align: right;
+  }
+  
+  .Total {
+    margin-top: 20px;
+    text-align: right;
+    font-weight: bold;
+  }
+  
+  .CheckoutButton {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .CartItem-Image {
+    width: 50px; /* Ajusta el ancho de la imagen según sea necesario */
+    height: 50px; /* Ajusta la altura de la imagen según sea necesario */
+    margin-right: 10px;
+  }
