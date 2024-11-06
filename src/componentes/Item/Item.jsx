@@ -14,10 +14,10 @@ const Item = ({ id, name, img, price, stock }) => {
       </picture>
       <section>
         <p className="Info">
-          Precio: ${price}
+          Price: ${price}
         </p>
         <p className="Info">
-          Stock disponible: {stock}
+          Stock: {stock}
         </p>
       </section>
       <footer className="ItemFooter">

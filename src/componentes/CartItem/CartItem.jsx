@@ -1,9 +1,12 @@
 import React from 'react';
-import Item from '../Item/Item'; // Importa el componente Item
+import Item from '../Item/Item'; 
 import './CartItem.css';
 
 const CartItem = ({ item, cantidad }) => {
-  // Calcula el subtotal del item
+  if (!item) {
+    return null; // O puedes mostrar un mensaje de error
+  }
+ 
   const subtotal = item.price * cantidad;
 
   return (
@@ -15,10 +18,8 @@ const CartItem = ({ item, cantidad }) => {
         price={item.price} 
         stock={item.stock} 
       />
-      {/* Muestra la cantidad y el subtotal */}
       <div className="CartItem-Cantidad">Cantidad: {cantidad}</div>
       <div className="CartItem-Subtotal">Subtotal: ${subtotal}</div>
-      {/* Añade aquí botones para aumentar/disminuir la cantidad */}
     </div>
   );
 };
