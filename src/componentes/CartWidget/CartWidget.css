@@ -1,0 +1,18 @@
+.Cartwidget {
+    position: absolute; /* Posiciona el widget de forma absoluta */
+    top: 30px;         /* Ajusta según sea necesario */
+    right: 60px;       /* Ajusta según sea necesario */
+    z-index: 1000;     /* Asegúrate de que esté por encima de otros elementos */
+    display: flex;     /* Para alinear la imagen y el número correctamente */
+    align-items: center; /* Centra verticalmente */
+}
+
+.Carting {
+    width: 100px;       /* Ajusta el tamaño según sea necesario */
+    height: 100px;      /* Ajusta el tamaño según sea necesario */
+}
+
+.cart-quantity {
+    margin-left: 5px;  /* Espacio entre el icono y el número */
+    font-weight: bold;  /* Opcional: hacer que el número se vea más destacado */
+}

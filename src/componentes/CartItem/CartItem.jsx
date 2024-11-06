@@ -1,10 +1,11 @@
 import React from 'react';
 import Item from '../Item/Item'; 
 import './CartItem.css';
+import CartContext from '../context/CartContext';
 
 const CartItem = ({ item, cantidad }) => {
   if (!item) {
-    return null; // O puedes mostrar un mensaje de error
+    return null; 
   }
  
   const subtotal = item.price * cantidad;
